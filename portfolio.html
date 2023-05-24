@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenish Kshetri</title>
+
+    <link rel="stylesheet" href='style.css'>
+    <style>
+        body {
+            background-image: url("n.jpg");
+        }
+    </style>
+    <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };
+        document.addEventListener("DOMContentLoaded", function () {
+            var links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(function (link) {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    var target = document.querySelector(link.getAttribute("href"));
+                    target.scrollIntoView({
+                        behavior: "smooth"
+                    });
+                });
+            });
+        });
+
+    </script>
+</head>
+
+
+
+<body>
+
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="image-section">
+                <img src="j.gif" alt="Your Image">
+            </div>
+        </section>
+
+        <section id="hero">
+            <h1>
+
+                Jenish Kshetri
+
+
+
+            </h1>
+
+        </section>
+
+        <section id="about">
+            <h1>About Me</h1>
+
+            <p>
+                Welcome to my portfolio website! I am a Python developer with a passion for building scalable and
+                efficient applications. I specialize in web development, data analysis, and automation. My goal is to
+                leverage my skills to solve complex problems and deliver high-quality solutions.
+            </p>
+
+
+
+            <section id="edu">
+                <h1>Education</h1>
+                <ul>
+                    <li>Bsc.CSIT at Nagarjuna College Of IT(2018-2023)</li>
+                    <li>+2 : Kathmandu Model Higher Secondary School(2016-2018)</li>
+
+                </ul>
+            </section>
+
+
+            <section id="skills">
+                <h1>Skills</h1>
+                <ul>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>Flask</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>Data Analysis</li>
+                    <li>Machine Learning</li>
+                    <li>Version Control (Git)</li>
+                </ul>
+            </section>
+
+            <section id="projects">
+                <h1>Projects</h1>
+                <div class="project">
+                    <h2>Movie Recommendation System</h2>
+                    <p>
+                        This system helps user to access movies according to their preferences.<br>
+
+
+                        Content based and Collaboraitve Filtering Technique were used in this project(django).<br>
+
+                    </p>
+                    <a href="https://github.com/Jenisssshhhh/Movie_Recommendation">View Project</a>
+                </div>
+
+                <div class="project">
+                    <h2>Customer Segmentation</h2>
+                    <p>
+                        This Project is able to recognize the customers and group them on the basis of their spending
+                        behaviour
+                        and income from the data of the supermarket.<br>
+                        K-Means++ Clustering Technique was used in this project and was completed using Jupyter Notebook
+                        and
+                        flask.
+
+                    </p>
+                    <a href="https://github.com/Jenisssshhhh/Customer-Segmentation">View Project</a>
+                </div>
+
+                <div class="project">
+                    <h2>E-Government</h2>
+                    <p>
+                        This is an Ineractive Service Model that aims in the digitalization of the government works and
+                        it
+                        also
+                        provides information regarding new plans and policies of the government.
+
+                    </p>
+                    <a href="https://github.com/Jenisssshhhh/E-gov-main">View Project</a>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h1>Contact Me </h1>
+                <p>
+                    If you have any questions or would like to discuss a potential project, feel free to get in touch
+                    with
+                    me.
+                </p>
+                <ul>
+                    <li>Email: <a href="mailto:jenishkshetri5@gmail.com">jenishkshetri5</a></li>
+                    <li>Phone:<a href="tel:9810125700">9810125700</a></li>
+                    <li>GitHub: <a href="https://github.com/Jenisssshhhh">Jenish</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/jenish-kshetri">jenish-kshetri</a></li>
+                </ul>
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Jenish Kshetri</p>
+    </footer>
+
+</body>
+<html>
